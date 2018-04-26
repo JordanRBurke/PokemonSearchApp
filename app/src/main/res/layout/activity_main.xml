@@ -24,6 +24,7 @@
             android:hint="Enter Pokemon!"
             android:fontFamily="monospace"
             android:textAlignment="center"
+
             />
 
 

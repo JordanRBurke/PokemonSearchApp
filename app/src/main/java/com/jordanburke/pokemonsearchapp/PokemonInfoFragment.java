@@ -24,7 +24,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class PokemonInfoFragment extends Fragment {
 
-    private String basUrl = "api/v2/pokedex/";
+    private String basUrl = "http://pokeapi.co/api/v2/pokemon/";
     private Retrofit retrofit;
     private PokemonRetrofit pokemonRetrofit;
     @BindView(R.id.pokemon_text_view)
@@ -87,6 +87,7 @@ public class PokemonInfoFragment extends Fragment {
     public void onStart() {
         super.onStart();
         String name = getArguments().getString(POKEMON_NAME);
+
         buildRetrofit();
         makeApiCall(name);
     }
