@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/fragment_constraint_layout"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/pokemon_text_view"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/fragment_constraint_layout"
+        app:layout_constraintLeft_toLeftOf="@id/fragment_constraint_layout"
+        app:layout_constraintTop_toTopOf="@id/fragment_constraint_layout"
+        android:layout_marginTop="40dp"
+        android:text="Pokemon Name"
+        android:textSize="25sp"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/pokemon_moves_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/fragment_constraint_layout"
+        app:layout_constraintRight_toRightOf="@id/fragment_constraint_layout"
+        app:layout_constraintLeft_toLeftOf="@id/fragment_constraint_layout"
+        app:layout_constraintTop_toBottomOf="@id/pokemon_image_view"/>
+
+    <ImageView
+        android:id="@+id/pokemon_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="@id/fragment_constraint_layout"
+        app:layout_constraintTop_toBottomOf="@id/pokemon_text_view"
+        app:layout_constraintLeft_toLeftOf="@id/fragment_constraint_layout"
+        app:layout_constraintRight_toRightOf="@id/fragment_constraint_layout"
+        android:layout_marginBottom="200dp"/>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
