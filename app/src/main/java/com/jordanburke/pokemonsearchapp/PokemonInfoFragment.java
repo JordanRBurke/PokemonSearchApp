@@ -70,7 +70,7 @@ public class PokemonInfoFragment extends Fragment {
                     pokemonDescriptionText.setText((CharSequence) response.body().getDescription());
                 } else {
                     Toast.makeText(getContext(), "Error", Toast.LENGTH_LONG).show();
-                }
+                }//s
             }
 
             @Override
